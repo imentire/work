@@ -1,0 +1,34 @@
+extends _layouts/base
+
+block config
+  - var baseUrl = './'
+  - var pageClass = 'home'
+
+include _modules/link/link
+
+block content
+  .ui-home
+    .owl-carousel.owl-theme
+      .owl-item
+        img(src="/images/slide-1.png")
+        .ui-slider
+          .l-grid.l-grid--container
+            .l-row.l-row--no-gutters
+              .l-col.l-col--xs-6
+                .ui-slider__text GOOD IDEAS comes
+              .l-col.l-col--xs-6
+                .ui-slider__headline FIRST!
+      .owl-item
+        img(src="/images/slide-4.png")
+      .owl-item
+        img(src="/images/slide-3.png")
+    .owl-controls
+      .owl-nav
+        .owl-prev 
+          img(src="/images/arrow-left.png")
+        .owl-next 
+          img(src="/images/arrow-right.png")
+      .owl-dots
+        .owl-dot 
+        .owl-dot
+        .owl-dot

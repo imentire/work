@@ -1,0 +1,370 @@
+// Normalize Styles
+@import '../../node_modules/normalize.css/normalize.css';
+@import '../../node_modules/magnific-popup/dist/magnific-popup.css';
+@import '../../node_modules/owl.carousel/dist/assets/owl.carousel.min.css';
+@import '../../node_modules/owl.carousel/dist/assets/owl.theme.default.min.css';
+
+@import 'grid'
+// Box sizing partial styles
+// Apply a natural box layout model to all elements
+*,
+*:before,
+*:after
+  font-family 'Lato', sans-serif
+  font-weight lighter
+  box-sizing border-box
+  outline 1px dashed green
+
+.ui-page
+  background #fff
+  height 100%
+
+  &--home
+    background #2c3e50 url('/images/home-bg.png') no-repeat 50% 0%
+    background-size 100%
+
+  &--services
+    background #b24a50 url('/images/services-bg.png') no-repeat 0% 20%
+    background-size 100%
+    text-decoration none
+
+  &--about
+    background #665464 url('/images/about-bg.png') no-repeat 0% 20%
+    background-size 100%
+    text-decoration none
+
+  &--work
+    background #81a256 url('/images/work-bg.png') no-repeat 50% 0%
+    background-size 100%
+    text-decoration none
+
+  &--contacts
+    background #75b4aa url('/images/contacts-bg.png') no-repeat 0% 50%
+    background-size 100%
+    text-decoration none
+
+.ui-header
+  max-width 1140px
+  margin 0 auto
+  padding 0 20px
+  position relative
+  z-index 10
+
+  &__content
+    display flex
+    justify-content space-between
+
+.ui-logo
+  font-family 'Damion', cursive
+  font-size 50px
+  color #fff
+
+.ui-menu
+  display flex
+
+  &__link
+    display block
+    text-decoration none
+    font-size 18px
+    color #fff
+    padding 40px 25px 15px 25px
+    transition all .2s ease
+    line-height 1
+    border-radius 0 0 5px 5px
+
+    &--home
+
+      &:hover
+      &^[1]--active
+        background #74c7d5
+
+    &--services
+
+      &:hover
+      &^[1]--active
+        background #df5c64
+
+    &--about
+
+      &:hover
+      &^[1]--active
+        background #91778e
+
+    &--work
+
+      &:hover
+      &^[1]--active
+        background #a1ca6c
+
+    &--contacts
+
+      &:hover
+      &^[1]--active
+        background #82c8bd
+
+.ui-home
+  position absolute
+  z-index 9
+  width 100%
+  height 100%
+  top 0
+
+.owl-item img
+  display block
+  width 100%
+  height auto
+
+.ui-slider
+  width 840px
+  background rgba(255, 255, 255, 0.3)
+  border-radius 4px
+  margin 0 auto
+  position absolute
+  top 40%
+  left 25%
+  color #74c7d5
+
+  &__text
+    font-size 60px
+    text-align right
+    line-height 58px
+    padding 20px
+
+  &__headline
+    font-size 138px
+    font-weight bold
+    line-height 138px
+    padding 9px 0
+
+.owl-dots
+  width 140px
+  display flex
+  justify-content space-between
+  position absolute
+  left 45%
+  bottom 20%
+
+.owl-theme .owl-dots .owl-dot span
+  background rgba(255, 255, 255, 0.5)
+  width 20px
+  height 20px
+  border 50%
+
+.owl-theme .owl-dots .owl-dot.active span
+  background #74c7d5
+
+.owl-theme .owl-dots .owl-dot:hover span
+  background #74c7d5
+
+.ui-content__wrapper
+  color #fff
+  width 1140px
+  margin 0 auto
+  display flex
+  justify-content center
+  text-align center
+  padding 0 20px
+
+  h1
+    font-size 60px
+    margin 0
+    padding-top 120px
+    padding-bottom 45px
+    line-height 1
+    font-weight lighter
+
+  span
+    color #e9989d
+
+  h2
+    font-size 20px
+    text-transform uppercase
+    margin 0
+    line-height 3
+    font-weight lighter
+
+.ui-wrapper
+  flex-direction column
+  width 100%
+
+  &__contenttext
+    font-size 14px
+    line-height 2
+
+    &--services
+      color #ffcccf
+
+    &--about
+      color #e6d1e3
+
+  &__svc
+    padding 100px 0
+
+  &__about
+    padding 50px 0
+
+  &__meetbutton
+    padding 40px 100px 0 100px
+
+.ui-svc-cart
+  padding 45px 25px
+  background rgba(196, 81, 86, 0.8)
+  border-radius 5px
+  display flex
+  flex-direction column
+  align-items center
+
+  &__imgsvc
+    border-radius 50%
+    border 5px solid #fff
+    display flex
+    justify-content center
+    align-items center
+    width 130px
+    height 130px
+
+  &__headline
+    font-size 30px
+    line-height 3
+    text-transform uppercase
+
+  &__text
+    font-size 14px
+    line-height 1.5
+
+.ui-imgsvc
+  border-radius 50%
+  border 5px solid #c45158
+  background #fff
+  width 120px
+  height 120px
+
+  &__lightball
+    background url('/images/lightball.png') no-repeat 50% 50%
+    width 100%
+    height 100%
+
+  &__mwand
+    background url('/images/mwand.png') no-repeat 50% 50%
+    width 100%
+    height 100%
+
+  &__giars
+    background url('/images/giars.png') no-repeat 50% 50%
+    width 100%
+    height 100%
+
+  &__rocket
+    background url('/images/rocket.png') no-repeat 50% 50%
+    width 100%
+    height 100%
+
+.ui-team-cart
+  padding 45px 25px 0 25px
+  background rgba(98, 80, 96, 0.5)
+  border-radius 5px
+  display flex
+  flex-direction column
+  align-items center
+
+  &:hover
+    background rgba(98, 80, 96, 0.8)
+
+  &:hover  &__imgteam
+    border 5px solid #df5c64
+
+  &:hover .ui-imgteam
+    background url('/images/fashe-shape-hover.png') no-repeat 50% 50%
+
+  &:hover &__headline
+    color #fff
+
+  &:hover &__position
+    color #df5c64
+
+  &:hover &__social-icon--fb
+    background #4f689e url('/images/facebook.png') no-repeat 50% 50%
+
+  &:hover &__social-icon--twitter
+    background #74c7d5 url('/images/twit.png') no-repeat 50% 50%
+
+  &:hover &__social-icon--google
+    background #df5c64 url('/images/g+.png') no-repeat 50% 50%
+
+  &:hover &__social-icon--linkedin
+    background #3e61af url('/images/lin.png') no-repeat 50% 50%
+
+  &__imgteam
+    border-radius 50%
+    border 5px solid #a1859e
+    display flex
+    justify-content center
+    align-items center
+    width 154px
+    height 154px
+
+  &__headline
+    font-size 25px
+    color #a1859e
+    line-height 3
+    font-weight bold
+    text-transform uppercase
+
+  &__position
+    font-size 14px
+    color #a1ca6c
+
+  &__social
+    display flex
+    justify-content center
+    align-items center
+    padding 20px
+
+  &__social-icon
+    width 30px
+    height 30px
+    border-radius 50%
+    margin 10px
+
+    &--fb
+      background #a1859e url('/images/facebook.png') no-repeat 50% 50%
+
+    &--twitter
+      background #a1859e url('/images/twit.png') no-repeat 50% 50%
+
+    &--google
+      background #a1859e url('/images/g+.png') no-repeat 50% 50%
+
+    &--linkedin
+      background #a1859e url('/images/lin.png') no-repeat 50% 50%
+
+.ui-imgteam
+  background url('/images/fashe-shape.png') no-repeat 50% 50%
+  width 100%
+  height 100%
+  border-radius 50%
+  border 2px solid #fff
+
+.ui-meetbutton
+  background #a1ca6c
+  width 276px
+  height 50px
+  margin 0 auto
+  border-radius 5px
+  display flex
+  align-items center
+  justify-content center
+  position relative
+  margin-bottom 20px
+
+  &:after
+    border 20px solid transparent
+    content ''
+    border-top 20px solid #a1ca6c
+    width 0
+    height 0
+    margin-left -20px
+    position absolute
+    display block
+    bottom -40px
+    left 50%

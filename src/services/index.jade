@@ -1,0 +1,45 @@
+extends ../_layouts/base
+
+block config
+  - var baseUrl = '../'
+  - var pageClass = 'services'
+
+block content
+  .ui-content__wrapper
+    .ui-wrapper
+      h1 OUR SERVICES
+      h2  Cras commodo mattis justo nec 
+        span lobortis 
+        |#{' '}. Nam ut tellus lobortis, ullamcorper massa sit amet
+      .ui-wrapper__contenttext(class="ui-wrapper__contenttext--" + pageClass) Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus aliquet erat rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo est. Quisque at ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere quis.
+      .ui-wrapper__svc
+        .l-grid.l-grid--container
+          .l-row.l-row--no-gutters
+            .l-col.l-col--xs-3
+              .ui-svc-cart
+                .ui-svc-cart__imgsvc
+                  .ui-imgsvc
+                    .ui-imgsvc__lightball
+                .ui-svc-cart__headline Researching
+                .ui-svc-cart__text Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
+            .l-col.l-col--xs-3
+              .ui-svc-cart
+                .ui-svc-cart__imgsvc
+                  .ui-imgsvc
+                    .ui-imgsvc__mwand
+                .ui-svc-cart__headline Design
+                .ui-svc-cart__text Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
+            .l-col.l-col--xs-3
+              .ui-svc-cart
+                .ui-svc-cart__imgsvc
+                  .ui-imgsvc
+                    .ui-imgsvc__giars
+                .ui-svc-cart__headline Development
+                .ui-svc-cart__text Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
+            .l-col.l-col--xs-3
+              .ui-svc-cart
+                .ui-svc-cart__imgsvc
+                  .ui-imgsvc
+                    .ui-imgsvc__rocket
+                .ui-svc-cart__headline Launch
+                .ui-svc-cart__text Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
